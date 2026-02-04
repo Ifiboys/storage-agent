@@ -451,7 +451,7 @@ docker-compose exec agent npx prisma migrate deploy
 
 ## 🤝 Support
 
-- 📚 Documentation complète : [envsafe.vercel.app/docs/external-storage](https://envsafe.dev/docs/external-storage)
+- 📚 Documentation complète : [envsafe.vercel.app/docs/external-storage](https://www.envsafe.dev/docs/external-storage)
 - 🐛 Issues : [github.com/Ifiboys/storage-agent/issues](https://github.com/Ifiboys/storage-agent/issues)
 - 📧 Email : oladokunefi123@gmail.com
 
