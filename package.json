@@ -1,0 +1,35 @@
+{
+    "name": "envsafe-storage-agent",
+    "version": "1.0.0",
+    "description": "Storage agent for EnvSafe BYOS (Bring Your Own Storage)",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "db:generate": "prisma generate",
+        "db:push": "prisma db push",
+        "db:migrate": "prisma migrate deploy"
+    },
+    "keywords": [
+        "envsafe",
+        "secrets",
+        "storage",
+        "byos",
+        "encryption"
+    ],
+    "author": "EnvSafe",
+    "license": "MIT",
+    "dependencies": {
+        "@prisma/client": "^7.3.0",
+        "express": "^4.18.2",
+        "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.11.16",
+        "prisma": "^7.3.0",
+        "tsx": "^4.7.1",
+        "typescript": "^5.3.3"
+    }
+}

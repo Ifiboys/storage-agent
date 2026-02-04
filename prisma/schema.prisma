@@ -1,0 +1,21 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/client"
+}
+
+model EncryptedVariable {
+  id             String   @id @default(cuid())
+  key            String
+  encryptedValue String   @map("encrypted_value") @db.Text // Toujours chiffré (AES-256-GCM)
+  environmentId  String   @map("environment_id")
+  
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@unique([environmentId, key])
+  @@map("encrypted_variables")
+}
