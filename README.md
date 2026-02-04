@@ -68,8 +68,8 @@ Seule votre clé privée locale (CLI/Navigateur) peut déchiffrer les données.
 ### Étape 1 : Cloner le dépôt
 
 ```bash
-git clone https://github.com/Ifiboys/envsafe-storage-agent.git
-cd envsafe-storage-agent
+git clone https://github.com/Ifiboys/storage-agent.git
+cd storage-agent
 ```
 
 ### Étape 2 : Générer un secret sécurisé
@@ -140,8 +140,8 @@ sudo apt install docker-compose-plugin
 #### 2. Cloner et configurer
 
 ```bash
-git clone https://github.com/Ifiboys/envsafe-storage-agent.git
-cd envsafe-storage-agent
+git clone https://github.com/Ifiboys/storage-agent.git
+cd storage-agent
 
 # Générer le secret
 openssl rand -hex 32
@@ -452,7 +452,7 @@ docker-compose exec agent npx prisma migrate deploy
 ## 🤝 Support
 
 - 📚 Documentation complète : [envsafe.vercel.app/docs/external-storage](https://envsafe.vercel.app/docs/external-storage)
-- 🐛 Issues : [github.com/Ifiboys/envsafe-storage-agent/issues](https://github.com/Ifiboys/envsafe-storage-agent/issues)
+- 🐛 Issues : [github.com/Ifiboys/storage-agent/issues](https://github.com/Ifiboys/storage-agent/issues)
 - 📧 Email : oladokunefi123@gmail.com
 
 ---
